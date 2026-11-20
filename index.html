@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7fc">
+  <meta name="description" content="UstaTop — ishonchli xizmatlar va mutaxassislarni topish platformasi">
+  <title>UstaTop — Ishonchli xizmatlar platformasi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <button class="logo" data-page="home">
+        <span class="logo-mark">U</span>
+        <span>Usta<span class="logo-purple">Top</span></span>
+      </button>
+
+      <nav class="desktop-nav">
+        <button class="nav-link active" data-page="home">Bosh sahifa</button>
+        <button class="nav-link" data-page="services">Xizmatlar</button>
+        <button class="nav-link" data-page="experts">Mutaxassislar</button>
+        <button class="nav-link" data-page="about">Biz haqimizda</button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" title="Mavzuni almashtirish">☾</button>
+        <button class="favorite-nav" id="favoritesBtn">
+          ♡ <span>Sevimlilar</span> <b id="favoriteCount">0</b>
+        </button>
+        <button class="login-btn" id="loginBtn">Kirish</button>
+        <button class="icon-btn menu-toggle" id="menuBtn" aria-label="Menyu">☰</button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <button data-page="home">Bosh sahifa</button>
+      <button data-page="services">Xizmatlar</button>
+      <button data-page="experts">Mutaxassislar</button>
+      <button data-page="about">Biz haqimizda</button>
+    </nav>
+  </header>
+
+  <main id="appView"></main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <button class="logo" data-page="home">
+          <span class="logo-mark">U</span>
+          <span>Usta<span class="logo-purple">Top</span></span>
+        </button>
+        <p class="footer-description">
+          Kerakli xizmat. Ishonchli mutaxassis.<br>
+          Hammasi bir platformada.
+        </p>
+      </div>
+
+      <div>
+        <h4>Platforma</h4>
+        <button data-page="home">Bosh sahifa</button>
+        <button data-page="services">Xizmatlar</button>
+        <button data-page="experts">Mutaxassislar</button>
+      </div>
+
+      <div>
+        <h4>Ma'lumot</h4>
+        <button data-page="about">Biz haqimizda</button>
+        <a href="mailto:info@ustatop.uz">Bog'lanish</a>
+      </div>
+
+      <div>
+        <h4>UstaTop</h4>
+        <p>O'zbekiston uchun zamonaviy xizmatlar platformasi.</p>
+        <span class="footer-social">Telegram · Instagram</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 UstaTop. Barcha huquqlar himoyalangan.</span>
+      <span>Made for Uzbekistan ✦</span>
+    </div>
+  </footer>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
